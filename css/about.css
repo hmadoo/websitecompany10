@@ -1,0 +1,85 @@
+
+.about-content{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 1rem;
+    margin-bottom: 120px;
+}
+
+
+.about-item{
+    position: relative;
+    text-align: center;
+    border: 1px solid rgba(201, 199, 199, 0.5);
+    border-radius: 10px;
+    padding: 30px 10px;
+    flex: 1;
+}
+
+
+.about-item i{
+    color: rgb(93, 93, 228);
+    font-size: 30px;
+    margin-bottom: 15px;
+
+}
+
+
+.about-item-title{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    transition: color 1s linear;
+}
+
+.about-item-desc{
+    color: rgb(172, 168, 168);
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    line-height: 2.5;
+    animation: bounceDesc 5s linear;
+}
+
+.about-item-link{
+    color: rgb(93, 93, 228);
+    text-transform: capitalize;
+
+}
+
+
+.about-item::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    border-radius: 5px;
+    transition: width .6s linear;
+    z-index: -1;
+}
+
+.about-item:hover::after{
+    width: 100%;
+    animation: bounceDesc 5s linear both;
+
+}
+
+.about-item:hover .about-item-title{
+    color: rgb(255, 255, 255);
+    animation: slideIcon 5s linear;
+
+}
+
+.about-item:hover .about-item-desc{
+    animation: slideIcon 5s linear;
+
+}
+
+.about-item:hover .icon{
+    animation: bounceIcon 5s linear;
+
+}
