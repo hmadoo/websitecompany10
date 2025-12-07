@@ -8,7 +8,7 @@ $(document).ready(function() {
 
     let previous = document.querySelector(".previous-img");
     let next = document.querySelector(".next-img");
-    let imgArray = ["/images/about1.jpg","/images/about2.jpg"];
+    let imgArray = ["images/about1.jpg","images/about2.jpg"];
 
 
     let silderImage = document.querySelector(".slider-image");
